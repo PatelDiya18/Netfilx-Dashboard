@@ -32,11 +32,6 @@ def load_data():
   return df
 df = load_data()
 
-st.sidebar.header("Filter Content")
-content_type = st.sidebar.selectbox(
-    "Select Content Type", ["All", "Movie", "TV Show"]
-)
-
 st.markdown("---")
 col_a, col_b = st.columns(2)
 with col_a:
